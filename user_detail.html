@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h4>User Details</h4>
+
+<ul class="list-group">
+    <li class="list-group-item"><strong>ID:</strong> {{ user.id }}</li>
+    <li class="list-group-item"><strong>Name:</strong> {{ user.name }}</li>
+    <li class="list-group-item"><strong>Email:</strong> {{ user.email }}</li>
+    <li class="list-group-item"><strong>Role:</strong> {{ user.role }}</li>
+</ul>
+
+<a href="/users" class="btn btn-secondary mt-3">Back</a>
+
+{% endblock %}
